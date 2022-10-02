@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card, .card-2{
+    min-height: 80vh;
+    width: 25rem;
+    border-radius: 30px;
+    padding: 0 5rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+.nike{
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.nike img{
+    width: 10rem;
+    z-index: 2;
+}
+.circle{
+    width: 8rem;
+    height: 8rem;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(to right, #FF69B4, #FFC0CB
+    );
+    position: absolute;
+    z-index: 1;
+}
+.info h1{
+    font-size: 40px;
+    transform: translateZ(30px);
+}
+.info h3{
+    font-size: 15px;
+    padding: 16px 0;
+    color: #585858;
+    font-weight: lighter;
+    transform: translateZ(-30px);
+    
+}
+.size{
+    display: flex;
+    justify-content: space-between;
+}
+.size button{
+    padding: 3px 18px;
+    background: none;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: bold;
+    color: #585858;
+    transition: all 0.3s ease-in;
+}
+.size button:hover{
+    background: #585858;
+    color: white;
+}
+button.active{
+    background: #585858;
+    color: white;
+}
+.purchase{
+    margin-top: 3rem;
+}
+.purchase button{
+    width: 100%;
+    padding: 10px 0px;
+    background: rgb(220,20,60, 0.75);
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: bold;
+    color: white;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in;
+}
+.purchase button:hover{
+    background: white;
+    color: rgb(220,20,60, 0.75);
+}
